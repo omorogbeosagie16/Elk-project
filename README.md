@@ -2,7 +2,8 @@
 
 The files in this repository were used to configure the network depicted below.
 
-![TODO: Update the path with the name of your diagram](Images/diagram_filename.png)
+![CLOUD NETWORK](https://user-images.githubusercontent.com/86134880/122697274-fcf39c00-d212-11eb-89e4-a3d1cf17bd09.png)
+
 
 These files have been tested and used to generate a live ELK deployment on Azure. They can be used to either recreate the entire deployment pictured above. Alternatively, select portions of the .YML file may be used to install only certain pieces of it, such as Filebeat.
 
@@ -116,13 +117,19 @@ Run the playbook, and navigate to ELk-Server to check that the installation work
 
 Answer the following questions to fill in the blanks:
 
-Which file is the playbook? Where do you copy it? The playbook is called filebeat-playbook.yml. You copy the file to the "/etc/ansible/hosts/" directory
+Which file is the playbook? Where do you copy it? 
+
+The playbook is called filebeat-playbook.yml. You copy the file to the "/etc/ansible/hosts/" directory
 
 
-Which file do you update to make Ansible run the playbook on a specific machine? You update the hosts file to designate which machines the playbook will install configurations on.
+Which file do you update to make Ansible run the playbook on a specific machine? 
+
+You update the hosts file to designate which machines the playbook will install configurations on.
 
 
-How do I specify which machine to install the ELK server on versus which to install Filebeat on? In the hosts file you have to designate a hosts server section and a seperate elk server section with the appropriate IP's. Then in your playbook you would designate which host group you are pushing the data to.
+How do I specify which machine to install the ELK server on versus which to install Filebeat on? 
+
+In the hosts file you have to designate a hosts server section and a seperate elk server section with the appropriate IP's. Then in your playbook you would designate which host group you are pushing the data to.
 
 
 Which URL do you navigate to in order to check that the ELK server is running? http://[your.ELK-VM.External.IP]:5601/app/kibana
