@@ -119,7 +119,7 @@ Answer the following questions to fill in the blanks:
 
 Which file is the playbook? Where do you copy it? 
 
-The playbook is called filebeat-playbook.yml. You copy the file to the "/etc/ansible/hosts/" directory
+The playbook are called filebeat-playbook.yml and metricbeat-playbook.yml. You copy the files to the "/etc/filebeat/filebeat.yml" and /etc/metricbeat/metricbeat.yml" directory
 
 
 Which file do you update to make Ansible run the playbook on a specific machine? 
