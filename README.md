@@ -5,9 +5,9 @@ The files in this repository were used to configure the network depicted below.
 ![CLOUD NETWORK](https://user-images.githubusercontent.com/86134880/122697274-fcf39c00-d212-11eb-89e4-a3d1cf17bd09.png)
 
 
-These files have been tested and used to generate a live ELK deployment on Azure. They can be used to either recreate the entire deployment pictured above. Alternatively, select portions of the .YML file may be used to install only certain pieces of it, such as Filebeat.
+These files have been tested and used to generate a live ELK deployment on Azure. They can be used to either recreate the entire deployment pictured above or alternatively, select portions of the .YML file may be used to install only certain pieces of it, such as Filebeat.
 
- Enter the playbook file. [elkinstall-playbook.yml](https://github.com/omorogbeosagie16/Elk-project/blob/a5025d6f86e77140485179d5e5f263001ce57c76/Ansible/elkinstall-playbook.yml)
+ [elkinstall-playbook.yml](https://github.com/omorogbeosagie16/Elk-project/blob/a5025d6f86e77140485179d5e5f263001ce57c76/Ansible/elkinstall-playbook.yml)
                               [filebeat-playbook.yml](https://github.com/omorogbeosagie16/Elk-project/blob/f09889fedf19dde5349e5313c3766cf4be519df8/Ansible/filebeat-playbook.yml)
 
 This document contains the following details:
@@ -26,16 +26,16 @@ The main purpose of this network is to expose a load-balanced and monitored inst
 
 Load balancing ensures that the application will be highly avaiable, in addition to restricting access to the network.
 
-What aspect of security do load balancers protect? Load balancers help to protect against DDos and Dos attacks by ensuring that web assets are deployed across multiple machines so if one machine goes down, traffic is redirected to the others. 
+Load balancers help to protect against DDos and Dos attacks by ensuring that web assets are deployed across multiple machines so if one machine goes down, traffic is redirected to the others. 
 
-What is the advantage of a jump box? A JumpBox is the orgination point for launching Administrative Tasks. It serves as a gateway from outside to your internal network. A Jump Box machine also allows for ansible configuration deployments across multiple VM's at once using one Playbook thereby making sure all machine within the network are configured the same way with the same operating systems.
+A JumpBox is the orgination point for launching Administrative Tasks. It serves as a gateway from outside to your internal network. A Jump Box machine also allows for ansible configuration deployments across multiple VM's at once using one Playbook thereby making sure all machine within the network are configured the same way with the same operating systems.
 
 Integrating an ELK server allows users to easily monitor the vulnerable VMs for changes to the logs and system traffic.
 
-  What does Filebeat watch for? Filebeat monitors system log files from all VM's on the network or location that are specified. it collects log events from these locations and sends to either elastic search or logstash for indexing. 
+  Filebeat monitors system log files from all VM's on the network or location that are specified. it collects log events from these locations and sends to either elastic search or logstash for indexing. 
 
 
-What does Metricbeat record? Metricbeats helps monitor servers on a network by recording metrics and statistical data from the systems and services running on the server. 
+Metricbeats helps monitor servers on a network by recording metrics and statistical data from the systems and services running on the server. 
 
 The configuration details of each machine may be found below.
 
